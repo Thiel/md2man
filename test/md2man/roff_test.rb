@@ -7,12 +7,12 @@
 # man 7 groff
 
 require 'test_helper'
-require 'md2man/engine'
+require 'md2man/roff/engine'
 
 describe 'roff engine' do
   before do
     @markdown = Redcarpet::Markdown.new(
-      Md2Man::Engine,
+      Md2Man::Roff::Engine,
       :tables => true,
       :autolink => true,
     )
